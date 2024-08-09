@@ -1,0 +1,33 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-dentallive-denlive-2d319-authRole",
+      "UnauthRoleArn": "arn:aws:iam::637423266623:role/amplify-dentallive-denlive-2d319-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::637423266623:role/amplify-dentallive-denlive-2d319-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-dentallive-denlive-2d319-deployment",
+      "UnauthRoleName": "amplify-dentallive-denlive-2d319-unauthRole",
+      "StackName": "amplify-dentallive-denlive-2d319",
+      "StackId": "arn:aws:cloudformation:ap-south-1:637423266623:stack/amplify-dentallive-denlive-2d319/7fb77250-563c-11ef-bc2c-02f2fe3afadf",
+      "AmplifyAppId": "d2rc67fcncs6a1"
+    }
+  },
+  "api": {
+    "dentallive": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            }
+          },
+          "additionalAuthenticationProviders": []
+        }
+      }
+    }
+  }
+}
